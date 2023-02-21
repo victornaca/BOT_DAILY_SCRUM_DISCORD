@@ -13,7 +13,7 @@ async def anuncio():
                 current_time = now.strftime("%H:%M")
                 print(current_time)
                 if current_time == "22:40":
-                        canal = client.get_channel(873013859428995089)
+                        canal = client.get_channel('channel')
                         await canal.send("@everyone Se liga na Daily de hoje \n1º O que eu fiz hoje? \n2º O que eu vou fazer no dia seguinte de trabalho? \n3º Problemas que eu possa ter")
                         await asyncio.sleep(60)
                 return
@@ -22,4 +22,4 @@ async def anuncio():
 async def on_ready():
         anuncio.start()
 
-client.run('MTA3NjU1MTU1NzYxODg2ODM0NQ.GznJYl.6aJH3mrOjO-C4GBAjYyW3Hd79o-FyfEM27WaGg')
+client.run('token')
